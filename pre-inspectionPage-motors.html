@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="stylesheet" href="mainStyles.css"> -->
+  <link rel="stylesheet" href="pre-inspectionPage.css">
+  
+  <title>Pre-Inspection page Motors</title>
+</head>
+
+<body>
+  <!-- aside section -->
+  <aside id="aside">
+<div class="left-sidebar">
+        <div><img src="/icons/sideBar-icon1.svg" alt=""></div>
+        <div><img src="/icons/icon3.svg" alt=""></div>
+        <div><img src="/icons/icon4.svg" alt=""></div>
+        <div><img src="/icons/Dribbble Light Preview.svg" alt=""></div>
+        <div><img src="/icons/Layer 5.svg" alt=""></div>
+        <div><img src="/icons/Layer 2.svg" alt=""></div>
+      </div>
+
+    <div class="right-sidebar">
+      <img src="/images/LAC Logo Alt 2.svg" alt="lead way assurance logo" class="leadway-logo">
+      <div class="right-sidebar-child">
+        <p>TRM</p>
+        <div><img src="/icons/overview white.svg" alt=""><a href="request-dashboard.html"
+            class="a-overview">Overview</a>
+        </div>
+
+        <div><img src="/icons/request-orange.svg" alt=""><a href="overview-dashboard.html" class="a-request">Request</a>
+        </div>
+
+      </div>
+    </div>
+  </aside>
+
+  <main>
+    <!-- main section content -->
+    <!-- header section -->
+    <header>
+      <div class="hamburger-menu" >
+          <img src="/icons/hamburger-menu.png"
+          id="hamburger" alt="">
+          <img src="/icons/clarity_close-line.svg" id="close-button" style="display: none;">
+        </div>
+      <img src="/icons/am-icon.svg" alt="Am icon" class="header-icon">
+      <img src="/icons/notification.svg" alt="notifications" class="header-icon">
+      <span>Adesola</span>
+      <img src="/icons/icon2.svg" alt="" class="header-icon">
+    </header>
+
+    <!-- main section -->
+
+    <div class="top-text">
+      <div class="top-text-header">
+        <h2>Create New Inspection<h2>
+            <p>See Inspection across all business classes</p>
+      </div>
+      <div class="close-btn">
+        <img src="/icons/left-arrow.svg" alt="">
+        <a href="create-new-inspection.html" id="close-button-a">Back to create request</a>
+      </div>
+    </div>
+
+    <!--====== grid container =====-->
+    <div class="grid-container">
+      <h3>Pre-loss Link Generation</h3>
+
+      <form action="" class="form">
+      <div class="grid-box">
+        <div class="grid">
+            <div class="form-control">
+            <label for="">Policy Number(optional)</label>
+            <div class="input-image">
+              <div class="image-container">
+                <img src="/images/search-icon.png" alt="">
+              </div>
+              <input type="text">
+            </div>
+            </div>
+          </div>
+            <!-- <div class="form-control">
+            <label for="">Issued For(optional)</label>
+            <div class="input-image">
+              <div class="image-container">
+                <img src="/images/search-icon.png" alt="">
+              </div>
+              <input type="text">
+            </div>
+            </div>
+
+            <div class="form-control">
+            <label for="">Assigned To</label>
+            <div class="input-image">
+              <div class="image-container">
+                <img src="/images/search-icon.png" alt="">
+              </div>
+              <input type="text">
+            </div>
+            </div>
+          </div> -->
+
+        <div class="grid">
+          <div class="form-control">
+            <label for="">Client First Name</label>
+              <input type="text">
+            </div>
+
+            <div class="form-control">
+            <label for="">Client Last Name</label>
+            <div class="input-image">
+              <input type="text">
+            </div>
+            </div>
+
+            <div class="form-control">
+              <label for="">Client Phone Number</label>
+              <input type="tel" placeholder="your name">
+            </div>
+
+            <div class="form-control">
+            <label for="">Client Email address</label>
+              <input type="text" placeholder="">
+            </div>
+          </div>
+
+        <div class="grid">
+            <div class="form-control">
+            <label for="">Vehicle</label>
+              <input type="text" placeholder="select a make" >
+            </div>
+
+            <div class="form-control">
+            <label for="">Select a model</label>
+              <input type="text">
+            </div>
+
+          <div class="form-control">
+            <label for="">Registration Number</label>
+              <input type="text">
+            </div>
+
+            <div class="form-control">
+            <label for="">Year</label>
+              <select name="" id="">
+                <option value="">Select a year</option>
+                <option value=""> 2000</option>
+                <option value="">2002</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="">
+            <div class="form-control">
+              <label for="">Comment</label>
+              <textarea></textarea>
+              <div class="p-and-a-tag">
+                <p>Attach Document</p>
+                
+                <button type="button" class="create-request-btn" id="generate-btn" onclick="showModel('model1')">Generate</button>
+              </div>
+            </div>
+          </div>
+      </div>
+        
+      </form>
+
+    </div>
+    <div class="overlay-popup" id="overlay-popup"></div>
+
+    <!-- ===pop up one=== -->
+    <div class="popuponebg">
+   <div class="pop-up-one hidden" id="model1">
+    <h3>SEND TO TRM</h3>
+    <p>Are you sure you want to send this request?</p>
+    <div class="button-group-two">
+      <button type="button" class="cancel" id="cancel"  onclick="hide('model1')">Cancel</button>
+      <button type="button" class="submit" id="submit" onclick="showModelTwo('model1','model2')">Submit</button>
+    </div>
+  </div>
+ </div>
+
+    <!-- ====pop up two=== -->
+ 
+
+ <div class="main-pop-up container hidden" id="model2">
+      <div class="pop-up-one-container">
+        <div class="close-container">
+          <img src="./icons/clarity_close-line.svg" alt="icon-close" class="close-button"/>
+        </div>
+        <img src="/icons/popp-up-one-image.svg" alt="icon" />
+
+        <div>
+          <p>
+            You’ve successfully created new <br />
+            Inspection ID-23321 for PRIME GARDENS
+          </p>
+        </div>
+
+        <div class="button-group">
+          <button type="submit" id="go-to-request-btn" class="">
+            Go to request list
+          </button>
+          <button type="submit" id="create-new-inspection-btn">
+            Create new inspection
+          </button>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script>
+    function showModel(model){
+      document.getElementById(model).classList.remove('hidden')
+      document.getElementsByTagName('body').style.backgroundColor ='rgba(0, 0, 0, 0.5)'
+      // if(){
+
+      // }
+    }
+    function hide(model){
+      document.getElementById(model).classList.add('hidden')
+    }
+  document.getElementById('go-to-request-btn').addEventListener('click', ()=>{
+    window.location.href = '/request-dashboard.html'
+  })
+   
+  document.getElementById('create-new-inspection-btn').addEventListener('click', ()=>{
+    window.location.href ='/create-new-inspection.html'
+  })
+  function showModelTwo(model1, model2){
+    if (document.getElementById(model1).classList !== 'hidden'){
+      document.getElementById(model1).classList.add('hidden')
+      
+      document.getElementById(model2).classList.remove('hidden')
+    }
+  }
+  </script>
+  <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -6,6 +6,7 @@
 }
 html {
   font-size: 7px;
+  font-family: 'mulish', sans-serif;
 }
 img {
   width: 100%;
@@ -289,4 +290,55 @@ form {
 .customer-mgt div p {
   font-size: 1.6rem;
   color: #585858;
+}
+
+/* mobile screen */
+@media screen and (max-width: 766px) {
+  /* body {
+    font-size: 14px;
+    height: 100vh;
+  }
+  .left-section {
+    width: 100%;
+    padding-left: 20px;
+  }
+  .login-link {
+    padding: 20px 200px;
+  }
+  main {
+    height: 100vh;
+    width: 100%;
+  }
+  .right-section {
+    display: none;
+  }
+  .lead {
+    width: 30px;
+  }
+  h3 {
+    font-size: 18px;
+  }
+  .reset-password {
+  }
+  .login-reset span {
+    color: #7f8b94;
+    margin-right: 20px;
+  }
+  .login-reset {
+    margin-top: -20px;
+    margin-bottom: 40px;
+  } */
+   .right {
+  display: none;
+}
+.left{
+  width: 100%;
+}
+#login{
+  margin-top: 30px;
+}
+.title-container h1{
+  font-size: 3rem;
+  line-height: 28px;
+}
 }

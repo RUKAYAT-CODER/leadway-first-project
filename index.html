@@ -25,8 +25,7 @@
         <div class="form-group">
           <label for="loginId">Login ID</label>
           <div>
-            <input type="text" n ame="loginId" id="loginId" required placeholder="Enter your login ID"
-              aria-required="true" />
+            <input type="text" name="loginId" id="loginId" placeholder="Enter your login ID" />
             <div class="form-icon">
               <img src="/icons/user.svg" alt="User icon" />
             </div>
@@ -40,8 +39,7 @@
             </button>
           </div>
           <div>
-            <input type="password" name="password" id="password" required placeholder="Enter your password"
-              aria-required="true" />
+            <input type="password" name="password" id="password" placeholder="Enter your password" />
             <div class="form-icon">
               <img src="/icons/password.svg" alt="Password icon" />
             </div>
@@ -66,7 +64,7 @@
             Reset Password
           </button>
         </div>
-        <button id="login" class="submit" type="submit" onclick="dashboard()">Login</button>
+        <button id="login" class="submit" type="button">Login</button>
       </form>
     </div>
     <div class="right">
@@ -94,7 +92,7 @@ document.getElementById('login').addEventListener('click', ()=>{
   window.location.href ='/overview-dashboard.html'
 })
   </script>
-  <script src="/js/login.js"></script>
+
 </body>
 
 </html>

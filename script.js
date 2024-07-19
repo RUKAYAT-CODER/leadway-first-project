@@ -8,8 +8,8 @@ hamburger.addEventListener("click", () => {
   aside.style.display = "flex";
   closeButton.style.display = "block";
   hamburger.style.display = "none";
-  closeButton.style.marginLeft = "180px";
-  closeButton.style.marginTop = "-10px";
+  closeButton.style.marginLeft = "160px";
+  closeButton.style.marginTop = "-12px"
   
 });
 closeButton.addEventListener("click", () => {
