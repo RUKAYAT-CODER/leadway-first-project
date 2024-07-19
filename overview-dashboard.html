@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/33c69d9e5a.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="/overview.css" />
+    <link rel="stylesheet" href="/mainStyles.css" />
+    <title>Overview Dashboard</title>
+  </head>
+
+  <body>
+    <!-- header section -->
+    <header>
+        <div class="hamburger-menu" >
+          <img src="/icons/hamburger-menu.png"
+          id="hamburger" alt="">
+          <img src="/icons/clarity_close-line.svg" id="close-button" style="display: none;">
+        </div>
+        <div>
+      <img src="/icons/am-icon.svg" alt="Am icon" class="header-icon" />
+      <img
+        src="/icons/notification.svg"
+        alt="notifications"
+        class="header-icon"
+      />
+      <span>Adesola</span>
+      <img src="/icons/icon2.svg" alt="" class="header-icon" />
+    </header>
+
+    <!-- side section -->
+    <aside id="aside">
+      <div class="left-sidebar">
+        <div><img src="/icons/sideBar-icon1.svg" alt="" /></div>
+        <div><img src="/icons/icon3.svg" alt="" /></div>
+        <div><img src="/icons/icon4.svg" alt="" /></div>
+        <div><img src="/icons/Dribbble Light Preview.svg" alt="" /></div>
+        <div><img src="/icons/Layer 5.svg" alt="" /></div>
+        <div><img src="/icons/Layer 2.svg" alt="" /></div>
+      </div>
+      <div class="right-sidebar">
+        <img
+          src="/images/LAC Logo Alt 2.svg"
+          alt="lead way assurance logo"
+          class="leadway-logo"
+        />
+        <div class="right-sidebar-child">
+          <p>TRM</p>
+          <div>
+            <img src="/icons/chart.svg" alt="" /><a
+              href="overview-dashboard.html"
+              class="a-overview"
+              >Overview</a
+            >
+          </div>
+          <div>
+            <img src="/icons/icon6.svg" alt="icon" /><a
+              href="request-dashboard.html"
+              class="a-request"
+              >Request</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="overlay"></div>
+    </aside>
+
+    <!-- main section -->
+    <main>
+      <!-- main section content -->
+      <div class="top-text">
+        <div class="top-text-header">
+          <h2>Welcome, <span>Olufemi</span></h2>
+          <p>Take a look at your dashboard and see all pending tasks</p>
+        </div>
+        <a href="create-new-inspection.html"
+          ><img src="/icons/add-icon.svg" alt="" /> Create new Inspection</a
+        >
+      </div>
+
+      <div class="middle-content-grid">
+        <div class="left-card">
+          <div class="left-card-blue">
+            <div class="bubble right-bubble"></div>
+            <div class="bubble left-bubble"></div>
+            <p class="all-request">All Request</p>
+            <div class="left-card-blue-child">
+              <img src="/icons/arrow-down.svg" alt="" />
+              <p class="thirty-two">32</p>
+            </div>
+          </div>
+
+          <div class="left-card-green">
+            <div class="bubble right-bubble"></div>
+            <div class="bubble left-bubble"></div>
+            <p class="all-request">Completed Request</p>
+            <div class="left-card-green-child">
+              <img src="/icons/arrow-down.svg" alt="" />
+              <p class="thirty-two">114</p>
+            </div>
+          </div>
+          <div class="left-card-yellow">
+            <div class="bubble right-bubble"></div>
+            <div class="bubble left-bubble"></div>
+            <p class="all-request">Ongoing Request</p>
+            <div class="left-card-yellow-child">
+              <img src="/icons/arrow-down.svg" alt="" />
+              <p class="thirty-two">19</p>
+            </div>
+          </div>
+          <div class="left-card-red">
+            <div class="bubble right-bubble"></div>
+            <div class="bubble left-bubble"></div>
+            <p class="all-request">Delayed Request</p>
+            <div class="left-card-red-child">
+              <img src="/icons/arrow-down.svg" alt="" />
+              <p class="thirty-two">19</p>
+            </div>
+          </div>
+        </div>
+        <div class="right-card">
+          <div class="right-card-header">
+            <h2>Activity</h2>
+            <p class="viewall-right-card">View All &gt;</p>
+          </div>
+          <div class="right-card-p">
+            <p>You have a property inspection coming up in three days</p>
+            <span class="right-card-header-span">Set remainder</span>
+          </div>
+          <div class="right-card-p">
+            <p>
+              Mustapha Onasanya sent a new property inspection for Rovenheight
+              homes
+            </p>
+            <span class="right-card-header-span">See Inspection</span>
+          </div>
+          <div class="right-card-p">
+            <p>
+              Your scheduled inspection for Gig Logistics is three days overdue
+            </p>
+            <span class="right-card-header-span">Re-shedule now</span>
+          </div>
+          <div class="right-card-p">
+            <p>
+              Mustapha Onasanya sent a new property inspection for Rovenheight
+              homes
+            </p>
+            <span class="right-card-header-span">See Inspection</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="table-container">
+        <table class="bottom-table">
+          <div class="table-heading">
+            <h3>Created implication</h3>
+            <p>View all &gt;</p>
+          </div>
+
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Name:</th>
+              <th>Class</th>
+              <th>Inspection officer</th>
+              <th>Officer:</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>10321</td>
+              <td>Gig Logistics</td>
+              <td><span class="entity-marine">&#8226;</span> Marine</td>
+              <td>Digital</td>
+              <td>Mustapha Oronsanya</td>
+              <td>QUOTE REQUEST</td>
+            </tr>
+
+            <tr>
+              <td>10321</td>
+              <td>Shoprite Stores</td>
+              <td><span class="entity-property">&#8226;</span> Property</td>
+              <td>Manual</td>
+              <td>Mustapha Oronsanya</td>
+              <td><a href="" class="completed">Completed</a></td>
+            </tr>
+            <tr>
+              <td>10321</td>
+              <td>Abiodun Abayomi</td>
+              <td><span class="entity-motor">&#8226;</span> Motor</td>
+              <td>Digital</td>
+              <td>Mustapha Oronsanya</td>
+              <td><a href="" class="ongoing">Ongoing</a></td>
+            </tr>
+            <tr>
+              <td>10321</td>
+              <td>Ben's Agro Allied</td>
+              <td><span class="entity-agric">&#8226;</span> Agric</td>
+              <td>Manual</td>
+              <td>Mustapha Oronsanya</td>
+              <td>SENT TO ENGINEER</td>
+            </tr>
+            <tr>
+              <td>10321</td>
+              <td>Abiodun Abayomi</td>
+              <td><span class="entity-bond">&#8226;</span> Bond</td>
+              <td>Digital</td>
+              <td>Mustapha Oronsanya</td>
+              <td>
+                <a href="" class="link-expired"><span>X</span> Link expired</a>
+              </td>
+            </tr>
+            <tr>
+              <td>10321</td>
+              <td>Julius Berger</td>
+              <td>
+                <span class="entity-engineering">&#8226;</span> Engineering
+              </td>
+              <td>Digital</td>
+              <td>Mustapha Oronsanya</td>
+              <td>
+                <a href="" class="inspection-link"
+                  ><img src="/icons/corner-up-left.svg" alt="" />Inspection
+                  link</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>10321</td>
+              <td>Abiodun Abayomi</td>
+              <td><span class="entity-agric">&#8226;</span> Agric</td>
+              <td>Digital</td>
+              <td>Mustapha Oronsanya</td>
+              <td><a href="" class="completed">Completed</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

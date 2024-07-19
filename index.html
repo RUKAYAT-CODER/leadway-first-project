@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login - Underwriter Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200..1000&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+
+<body class="body-center">
+  <div class="container">
+    <div class="left">
+      <div class="logo-container">
+        <img src="/images/New Leadway Logo 1.png" alt="Leadway Logo" />
+      </div>
+      <div class="title-container">
+        <h1>Underwriter Dashboard</h1>
+        <p>Welcome, Login to your portal account.</p>
+      </div>
+      <form aria-labelledby="loginForm" id="login-form">
+        <div class="form-group">
+          <label for="loginId">Login ID</label>
+          <div>
+            <input type="text" n ame="loginId" id="loginId" required placeholder="Enter your login ID"
+              aria-required="true" />
+            <div class="form-icon">
+              <img src="/icons/user.svg" alt="User icon" />
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <div>
+            <label for="password">Password</label>
+            <button type="button" id="togglePassword" class="show" aria-label="Toggle password visibility">
+              Show
+            </button>
+          </div>
+          <div>
+            <input type="password" name="password" id="password" required placeholder="Enter your password"
+              aria-required="true" />
+            <div class="form-icon">
+              <img src="/icons/password.svg" alt="Password icon" />
+            </div>
+          </div>
+        </div>
+        <div class="log-status">
+          <div class="checkbox-wrapper-28">
+            <input id="keepLoggedIn" type="checkbox" class="promoted-input-checkbox" />
+            <svg>
+              <use xlink:href="#checkmark-28" />
+            </svg>
+            <label for="keepLoggedIn">
+              Keep me logged in
+            </label>
+            <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+              <symbol id="checkmark-28" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-miterlimit="10" fill="none" d="M22.9 3.7l-15.2 16.6-6.6-7.1"></path>
+              </symbol>
+            </svg>
+          </div>
+          <button class="reset" type="button">
+            Reset Password
+          </button>
+        </div>
+        <button id="login" class="submit" type="submit" onclick="dashboard()">Login</button>
+      </form>
+    </div>
+    <div class="right">
+      <div class="help-container">
+        <img src="/icons/help.png" alt="help icon" />
+        <button>help</button>
+      </div>
+      <img class="login-bg" src="/images/BrokerPortal.png" alt="Login illustration" />
+      <div class="customer-mgt">
+        <div class="group-img">
+          <img src="/images/_Group_.png" alt="icon" />
+        </div>
+        <div>
+          <h3>Customer Management</h3>
+          <p>
+            Manage all customers from individual customers to
+            corporate or group customers.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+document.getElementById('login').addEventListener('click', ()=>{
+  window.location.href ='/overview-dashboard.html'
+})
+  </script>
+  <script src="/js/login.js"></script>
+</body>
+
+</html>

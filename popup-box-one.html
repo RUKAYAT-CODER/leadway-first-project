@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>pop-up-one</title>
+
+    <style>
+      /* ======universal styles===== */
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+      }
+      body {
+        font-family: "Mulish", sans-serif;
+        font-size: 14px;
+        background-color: #908989;
+        width: 100vw;
+      }
+      .main-pop-up-container{
+        width: 400px;
+        height: 300px; 
+        margin: 10% auto;
+         background-color: white;
+        border: 1px solid #fdfdfd;
+      }
+      .pop-up-one-container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        width: 380px;
+        height: 350px; 
+        margin: 10% auto;
+        background-color: white;
+        border: 1px solid #fdfdfd;
+        padding:10px;
+      }
+      .pop-up-one-container p {
+        color: #00b388;
+        font-weight: 700;
+        font-family: "Roboto", sans-serif;
+        margin-bottom: 10px 0;
+        line-height:22px;
+      }
+      #go-to-request-btn {
+        padding: 10px 16px;
+        border-radius: 3px;
+        font-size: 14px;
+        font-family: 400;
+        background-color: white;
+        color: black;
+        border:1px solid #9FA8AF;
+        margin-right: 5px;
+      }
+      #create-new-inspection-btn {
+        padding: 10px 16px;
+        background-color: #ff7a00;
+        font-size: 14px;
+        font-weight: 400;
+        border-radius: 3px;
+        color: white;
+        border: none;
+      }
+      .close-button {
+        width: 10px;
+      }
+      .pop-up-one-container img {
+        width: 100px;
+        margin-bottom: 20px;
+        margin-top: 0;
+        
+      }
+      .button-group {
+        margin: 20px 0;
+      }
+      .close-button{
+        width: 15px;
+      }
+      .close-button{
+        position: relative;
+        top: -19px;
+        left: 159px;
+        width: 20px;
+        height: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-pop-up container">
+      <div class="pop-up-one-container">
+        <div class="close-container">
+          <img src="./icons/clarity_close-line.svg" alt="icon-close" class="close-button"/>
+        </div>
+        <img src="/icons/popp-up-one-image.svg" alt="icon" />
+
+        <div>
+          <p>
+            You’ve successfully created new <br />
+            Inspection ID-23321 for PRIME GARDENS
+          </p>
+        </div>
+
+        <div class="button-group">
+          <button type="submit" id="go-to-request-btn" class="">
+            Go to request list
+          </button>
+          <button type="submit" id="create-new-inspection-btn">
+            Create new inspection
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

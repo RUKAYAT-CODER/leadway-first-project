@@ -1,0 +1,202 @@
+.hamburger-menu img{
+  width: 20px;
+}
+.status-button {
+  background-color: #f0f0f0;
+  font-size: 12px;
+  font-weight: 400;
+  margin-left: 0px;
+}
+.all-request {
+  background-color: white;
+  border-radius: 3px;
+  color: #2f2f2f;
+}
+.status-search-container input,
+select,
+button {
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #eeeeee;
+}
+.search-box,
+.marine,
+select {
+  margin-left: 15px;
+}
+.status-search-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.search {
+  display: flex;
+}
+.search-box {
+  display: flex;
+  position: relative;
+}
+.marine {
+  background-color: #eeeeee;
+}
+.entity-marine {
+  color: #6941c6;
+}
+.search-box img {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  top: 8px;
+  left: 4px;
+  vertical-align: center;
+}
+.sort-by{
+  color: red;
+}
+.search-box input::placeholder {
+  padding-left: 12px;
+}
+a {
+  text-decoration: none;
+}
+.status-button a {
+  padding: 6px 12px;
+  color: #2f2f2f;
+}
+ .bottom-table {
+  width: 100%;
+  font-size: 16px;
+  border-collapse: collapse;
+  padding: 8px;
+  border-radius: 16px;
+  text-align: center;
+  border: 1px solid rgb(220, 218, 218);
+}
+ .table-heading {
+  display: flex;
+  margin-bottom: 20px;
+  justify-content: space-between;
+}
+.table-heading h3 {
+  padding-left: 20px;
+  margin-top: 20px;
+}
+td,
+th {
+  padding: 8px;
+  line-height: 20px;
+  border-bottom: 1px solid rgb(220, 218, 218);
+  text-align: center;
+}
+
+thead tr th {
+  text-align: center;
+}
+th {
+  color: #7f8b94;
+  background-color: #f0f0f0;
+}
+.bottom-table .completed {
+  padding: 1px 14px;
+  background-color: #ecfdf3;
+  color: #027a48;
+  border-radius: 3px;
+  font: 11px;
+  line-height: 18px;
+  text-decoration: none;
+}
+
+.ongoing {
+  background-color: #ffdebf;
+  padding: 1px 14px;
+  color: #ff7a00;
+  border-radius: 3px;
+  font: 11px;
+  line-height: 18px;
+}
+/* =======Responsiveness */
+@media only screen and (max-width: 600px) {
+  main {
+    padding-left: 20px; /* Adjusted padding */
+  }
+
+  aside {
+    width: 50px; /* Reduced width */
+  }
+  .second-icon-leftsidebar {
+  background-color: white;
+  padding: 10px 14px;
+  margin-left: -17px;
+}
+  .right-sidebar {
+    display: none; /* Hide right sidebar on smaller screens */
+  }
+  .top-text {
+  display: flex;
+  flex-direction: column;
+   padding-left: 35px;
+  
+}
+.top-text a{
+  margin-top: 10px;
+  padding: 10px;
+  width: fit-content;
+}
+  .top-text .top-text-btn {
+     /* Adjusted padding */
+    margin-top: 15px;
+    font-size:12px;
+  }
+  .top-text-header h2 {
+  font-size: 18px;
+}
+
+  .status-search-container {
+    flex-direction: column; /* Stack items vertically */
+    /* padding-left: 30px; */
+    align-items: flex-start; 
+    margin-left: 0px;/* Align items to start */
+  }
+  .status-button{
+    margin-bottom: 10px;
+    margin-left: 0;
+  }
+
+  .search-box {
+    margin-left: 0; /* Remove left margin */
+    margin-top: 10px; /* Adjust top margin */
+  }
+.status-search-container input,
+select,
+button {
+  padding: 2px;
+  border-radius: 4px;
+  border: 1px solid #eeeeee;
+}
+.search-box,
+.marine,
+select {
+  margin-left: 5px;
+}
+.search{
+  margin-bottom: 8px;
+}
+.search-box img {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: 16px;
+  left: 8px;
+  vertical-align: center;
+}
+.search-box input::placeholder {
+  padding-left: 18px;
+}
+.table-heading{
+  margin-left: 40px;
+}
+.bottom-table{
+  overflow-x: auto;
+}
+}
+

@@ -1,0 +1,148 @@
+.close-btn {
+  margin-right: 20px;
+}
+.close-btn img {
+  width: 24px;
+}
+.close-btn span {
+  display: block;
+  font-size: 10px;
+  color: #acacac;
+  line-height: 15px;
+}
+/* main-content */
+
+.newInspectDiv {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-top: 15%;
+}
+.cardList {
+  border: 1px solid #eeeeee;
+  background-color: #ffffff;
+  width: 250px;
+  padding: 4% 1%;
+  border-radius: 10px;
+  text-align: center;
+}
+.list2 {
+  position: relative;
+}
+.cardList p {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22.59px;
+  color: #34475e;
+  margin-top: 15%;
+}
+.roundedImgDiv {
+  width: 122px;
+  height: 122px;
+  border-radius: 50%;
+  border: 3px solid #7f8b94;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.roundedImgDiv img {
+  width: 86px;
+  height: 86px;
+}
+.arrowDiv {
+  position: absolute;
+  top: 130px;
+  left: 50px;
+}
+.custom-select-wrapper {
+  /* width: 100%; */
+  max-width: 520px;
+  margin: 2% auto;
+}
+select {
+  border: 1px solid #eeeeee;
+  height: 38px;
+  width: 100%;
+  border-radius: 5px;
+  margin: 10px 0 70px 0;
+}
+p {
+  color: #34475e;
+  line-height: 20px;
+  font-size: 14px;
+}
+.create-request-buttton {
+  /* margin: auto; */
+  width: 100%;
+  cursor: pointer;
+}
+/* .create-request-btn {
+  background-color: #c3c4c6;
+  padding: 20px 60px;
+  margin: 100px 140px;
+  border-radius: 3px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+} */
+.create-request-btn {
+  background-color: #c3c4c6;
+  padding: 16px 28px;
+  border-radius: 3px;
+  color: white;
+  text-align: center;
+  margin-left: 180px;
+  text-decoration: none;
+  margin-top: 0;
+  cursor:pointer ;
+}
+.create-active-request-btn {
+  background-color: #ff7a00;
+  padding: 18px 60px;
+  margin: 100px 130px;
+  border-radius: 3px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+.create-request-btn img {
+  width: 12px;
+  margin: auto;
+}
+.cardList.hovercolor:hover {
+  border-color: #ff7a00;
+}
+.create-active-request-btn img {
+  width: 12px;
+  margin: auto;
+}
+
+@media (max-width: 768px) {
+  /* .custom-select-wrapper {
+    width: 100%;
+  } */
+  select {
+    width: 100%;
+  }
+  .arrowDiv {
+    position: absolute;
+    top: 100px;
+    left: 50px;
+  }
+  .create-request-btn {
+    background-color: #c3c4c6;
+    padding: 10px 50px;
+    /* margin: 130px 200px; */
+    margin-left: 130px;
+    border-radius: 3px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+  }
+  .custom-select-wrapper p {
+    margin-left: 30px;
+  }
+}

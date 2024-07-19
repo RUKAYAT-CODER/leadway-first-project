@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Request Page Completed</title>
+  <link rel="stylesheet" href="requestCompleted.css">
+  <link rel="stylesheet" href="mainStyles.css">
+   
+</head>
+
+  <body>
+ <!-- ===header section ===-->
+      <header>
+        <div class="hamburger-menu" >
+          <img src="/icons/hamburger-menu.png"
+          id="hamburger" alt="">
+          <img src="/icons/clarity_close-line.svg" id="close-button" style="display: none;">
+        </div>
+        <img src="/icons/am-icon.svg" alt="Am icon" class="header-icon" />
+        <img
+          src="/icons/notification.svg"
+          alt="notifications"
+          class="header-icon"
+        />
+        <span>Adesola</span>
+        <img src="/icons/icon2.svg" alt="icon" class="header-icon" />
+      </header>
+
+    <!-- aside section -->
+    <aside id="aside">
+      <div class="left-sidebar">
+        <div><img src="/icons/sideBar-icon1.svg" alt="icon"></div>
+        <div><img src="/icons/icon3.svg" alt="icon"></div>
+        <div><img src="/icons/icon4.svg" alt="icon"></div>
+        <div><img src="/icons/Dribbble Light Preview.svg" alt=""></div>
+        <div><img src="/icons/Layer 5.svg" alt="icon"></div>
+        <div><img src="/icons/Layer 2.svg" alt="icon"></div>
+      </div>
+
+      <div class="right-sidebar">
+        <img src="/images/LAC Logo Alt 2.svg" alt="lead way assurance logo" class="leadway-logo">
+        <div class="right-sidebar-child">
+          <p>TRM</p>
+          <div><img src="/icons/overview white.svg" alt="overview-icon"><a href="overview-dashboard.html" class="a-overview">Overview</a>
+          </div>
+
+          <div><img src="/icons/request-orange.svg" alt="request-icon"><a href="request-dashboard.html" class="a-request">Request</a>
+          </div>
+
+        </div>
+      </div>
+    </aside>
+
+    <main>
+      <!-- main section content -->
+      
+    
+    <!-- main section -->
+      <div class="top-text">
+        <div class="top-text-header">
+          <h2>Inspection List</h2>
+          <p>See Inspection across all business classes</p>
+        </div>
+        <a href="create-new-inspection.html"><img src="/icons/add-icon.svg" alt="add icon"/> &nbsp;Create new Inspection</a
+        >
+      </div>
+        
+        <div class="status-search-container">
+          <div class="status-button">
+            <a href="request-dashboard.html" class="all-request">All Requests</a>
+            <a href="requestOngoing.html">Ongoing</a>
+            <a href="requestCompleted.html" class="completed-staus">Completed</a>
+          </div>
+
+          <div class="search">
+            <div class="search-box">
+              <img src="/images/search-icon.png" alt="">
+              <input type="text" placeholder="Search">
+            </div>
+
+            <button class="marine"><span class="entity-marine">&#8226;</span> marine X</button>
+
+            <select name="class" id="">
+              <option value="sort-by">sort by: Class</option>
+              <option value="sort-by">class</option>
+              <option value="sort-by">class</option>
+            </select>
+          </div>
+        </div>
+
+    <table class="bottom-table">
+    <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name:</th>
+      <th>Class</th>
+      <th>Inspection officer</th>
+      <th>Officer:</th>
+      <th>Status</th>
+    </tr>
+      </thead>
+
+    <tbody>
+      <tr>
+        <td>10321</td>
+        <td>Rovenheights properties</td>
+        <td>Motor</td>
+        <td>Digital</td>
+        <td>Mustapha Oronsanya</td>
+        <td><a href="" class="completed">Completed</a></td>
+      </tr>
+
+    <tr>
+      <td>10321</td>
+      <td>Shoprite Stores</td>
+      <td>Property</td>
+      <td>Manual</td>
+      <td>Mustapha Oronsanya</td>
+      <td><a href="" class="completed">Completed</a></td>
+    </tr>
+    </tbody>
+    </table>
+<script src="hamburger.js"></script>
+  </main>
+</html>

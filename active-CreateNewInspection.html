@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Active Create New Inspection Page</title>
+  <link rel="stylesheet" href="create-new-inspection.css">
+  <link rel="stylesheet" href="mainStyles.css">
+</head>
+
+<body>
+
+  <!-- header section -->
+  <header>
+    <div class="hamburger-menu" >
+      <img src="/icons/hamburger-menu.png"
+      id="hamburger" alt="">
+      <img src="/icons/clarity_close-line.svg" id="close-button" style="display: none;">
+    </div>
+    <img src="/icons/am-icon.svg" alt="Am icon" class="header-icon">
+    <img src="/icons/notification.svg" alt="notifications" class="header-icon">
+    <span>Adesola</span>
+    <img src="/icons/icon2.svg" alt="" class="header-icon">
+  </header>
+
+  <!-- aside section -->
+  <aside id="aside">
+    <div class="left-sidebar">
+        <div><img src="/icons/sideBar-icon1.svg" alt=""></div>
+        <div><img src="/icons/icon3.svg" alt=""></div>
+        <div><img src="/icons/icon4.svg" alt=""></div>
+        <div><img src="/icons/Dribbble Light Preview.svg" alt=""></div>
+        <div><img src="/icons/Layer 5.svg" alt=""></div>
+        <div><img src="/icons/Layer 2.svg" alt=""></div>
+      </div>
+    <div class="right-sidebar">
+      <img src="/images/LAC Logo Alt 2.svg" alt="lead way assurance logo" class="leadway-logo">
+      <div class="right-sidebar-child">
+        <p>TRM</p>
+        <div><img src="/icons/overview white.svg" alt=""><a href="overview-dashboard.html"
+            class="a-overview">Overview</a>
+        </div>
+        <div><img src="/icons/request-orange.svg" alt=""><a href="request-dashboard.html" class="a-request">Request</a>
+        </div>
+      </div>
+    </div>
+  </aside>
+  <!-- main section -->
+  <main>
+    <!-- main section content -->
+    <div class="top-text">
+      <div class="top-text-header">
+        <h2>Create New Inspection<h2>
+            <p>See Inspection across all business classes</p>
+      </div>
+
+      <div class="close-btn">
+        <img src="/icons/clarity_close-line.svg" alt="">
+        <span>close</span>
+      </div>
+    </div>
+    <!-- ======main content=== -->
+    <div class="main-container">
+      <div class="newInspectDiv ">
+        <div class="cardList" id="pre-loss">
+          <div class="roundedImgDiv">
+            <img src="/images/carbon_chart-win-loss.svg" alt="">
+          </div>
+          <p>Pre-loss Inspection</p>
+        </div>
+        <div class="cardList list2" id="post-loss">
+          <div class="roundedImgDiv">
+            <img src="/images/carbon_chart-win-loss.svg" alt="">
+          </div>
+          <div class="arrowDiv">
+            <img src="/images/Arrow 1.svg" alt="">
+          </div>
+          <p>Post-loss Inspection</p>
+        </div>
+      </div>
+      <div class="custom-select-wrapper">
+        <p>Choose a class</p>
+        <select name="properties" id="select-option">
+          <option value="Property"> 🔵&nbsp; Property</option>
+          <option value="Motors"> &#128992;&nbsp; Motors</option>
+          <option value="Bond"> 🟡&nbsp; Bond</option>
+          <option value="Agric"> 🟢&nbsp; Agric</option>
+          <option value="Marine"> 🟣&nbsp; Marine</option>
+          <option value="Engineering">🔴 &nbsp;Engineering</option>
+        </select>
+        <div class="create-request-button">
+          <!-- <a href=" " class="create-request-btn" id="button"> <img src="/icons/Group.svg" alt="icon"> &nbsp;Create
+            Request</a> -->
+            <button type="submit" id="button" class="create-request-btn"><img src="/icons/Group.svg" alt="addicon"> &nbsp; Create Request</button>
+        </div>
+      </div>
+
+    </div>
+  </main>
+  <script src="script.js"></script>
+  <script src="create-new-inspection.js"></script>
+</body>
+
+</html>
