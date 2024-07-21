@@ -583,31 +583,8 @@ p {
 /* Responsiveness */
 /* Mobile screen */
 @media screen and (max-width: 600px) {
-  /* .right-sidebar {
-    position: relative;
-    background-color: #f2d59c;
-  }
-
-  .right-sidebar {
-    position: fixed;
-    width: 100%;
-    flex-direction: column;
-    height: 80%;
-    background-color: coral;
-    left: 60%;
-    top: 9%;
-    clip-path: circle(100px at 90% -18%);
-    -webkit-clip-path: circle(100px at 90% -18%);
-    transition: all 2s ease-in;
-  }
-  .right-sidebar.open {
-    clip-path: circle(800px at 90% -18%);
-    -webkit-clip-path: circle(800px at 90% -18%);
-  } */
+ 
 }
-
-/* ======another instance====== */
-/* Reset and Global Styles */
 
 /* Responsive Design */
 @media screen and (max-width: 800px) {
@@ -640,12 +617,28 @@ p {
     /* left: 30px; */
   }
     .search-box img {
-  top: 4px;
+  top: 18px;
 }
  .status-button{
     display: flex;
     flex-direction: column;
   }
+  .status-search-container input,
+select,
+button {
+  padding: 5px;
+}
+.top-text a {
+  font-size: 12px;
+  padding: 10px;
+  margin-top: 10px;
+}
+.top-text a {
+    align-self: flex-start;
+  }
+.top-text{
+  /* flex-direction: column; */
+}
 }
 
 @media screen and (max-width: 600px) {
@@ -657,6 +650,7 @@ p {
     margin-top: 10px;
   }
   .search-box img {
-  top: 4px;
+  top: 24px;
+  left: 4px;
 }
 }

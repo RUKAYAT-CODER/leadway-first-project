@@ -134,7 +134,7 @@ p {
   }
   .create-request-btn {
     background-color: #c3c4c6;
-    padding: 10px 50px;
+    padding: 10px 30px;
     /* margin: 130px 200px; */
     margin-left: 130px;
     border-radius: 3px;
@@ -145,4 +145,8 @@ p {
   .custom-select-wrapper p {
     margin-left: 30px;
   }
+
+  .top-text{
+  display: flex;
+}
 }

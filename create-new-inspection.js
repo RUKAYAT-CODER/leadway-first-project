@@ -39,7 +39,7 @@ postLoss.addEventListener("click", function () {
       });
     } else if (currentValue === "Motors") {
       button.addEventListener("click", function () {
-        window.location.href = "/post-loss-inspectionPage-motors.html";
+        window.location.href = "/post-loss-inspection-page-motors.html";
       });
     }
   });

@@ -283,6 +283,18 @@ aside {
   border: 1px solid #fdfdfd;
   padding: 10px;
 }
+.pop-up-two-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 380px;
+  height: 350px;
+  margin: 5% auto;
+  background-color: white;
+  border: 1px solid #fdfdfd;
+  padding: 10px;
+}
 .hidden {
   display: none;
 }
@@ -399,7 +411,11 @@ aside {
   }
 
   aside {
-    display: none; /* Hide sidebar on smaller screens */
+    display: none; 
+    z-index: 80;
+  }
+  form{
+    z-index: 1;
   }
   .hamburger-menu {
     display: block;
@@ -418,4 +434,37 @@ aside {
   #close-button {
     width: 40px;
   }
+  .pop-up-one-container {
+  width: 220px;
+  height: 190px;
+  margin: 35% auto;
+}
+.main-pop-up-container {
+  width: 220px;
+  height: 190px;
+  margin: 15% auto;
+ 
+}
+.pop-up-one-container h3{
+  margin-bottom: 20px;
+}
+.pop-up-one-container p{
+  margin-bottom: 12px;
+}
+.main-pop-up-two-container {
+  width: 400px;
+  height: 120px;
+  background-color: white;
+  margin: 15% auto;
+  border-radius: 5px;
+  box-sizing: 2px 2px 2px black;
+  padding: 20px;
+  border: 1px solid #e8e5e5;
+}
+ .main-pop-up-two-container {
+  width: 400px;
+  height: 150px;
+  margin: 35% auto;
+}
+
 }

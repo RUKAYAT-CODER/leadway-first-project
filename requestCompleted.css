@@ -159,6 +159,12 @@ th {
   left: 4px;
   vertical-align: center;
 }
+.top-text{
+  flex-direction: column;
+}
+.bottom-table{
+  overflow-x: auto;
+}
 }
 
 
