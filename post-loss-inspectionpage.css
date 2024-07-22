@@ -269,3 +269,11 @@ main {
   justify-content: space-between;
   margin-top: 20px;
 }
+.hamburger-menu {
+  display: none;
+}
+.close-button{
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+}

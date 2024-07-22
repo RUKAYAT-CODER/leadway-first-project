@@ -8,8 +8,10 @@ hamburger.addEventListener("click", () => {
   aside.style.display = "flex";
   closeButton.style.display = "block";
   hamburger.style.display = "none";
-  closeButton.style.marginLeft = "167px";
-  closeButton.style.marginTop = "-10px"
+  closeButton.style.marginLeft = "110px";
+  closeButton.style.marginTop = "-20px"
+  closeButton.style.zIndex = '500px'
+
   
 });
 closeButton.addEventListener("click", () => {
@@ -18,7 +20,7 @@ closeButton.addEventListener("click", () => {
   hamburger.style.display = "block";
   closeButton.style.display = "none";
   closeButton.style.marginLeft = "180px";
-  
+  closeButton.style.fontSize = "18px";
 });
 
 

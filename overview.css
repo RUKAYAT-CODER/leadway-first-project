@@ -276,6 +276,11 @@ a {
   font: 11px;
   line-height: 18px;
 }
+.close-button{
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+}
 
 /* Responsiveness */
 /* Mobile screen */

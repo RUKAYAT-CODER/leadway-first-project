@@ -15,7 +15,6 @@ display: none;
 .rovenheight-h2 h2{
   font-weight: 700;
   font-size: 22px;
-  /* font-weight: bold; */
   color:#34475E;
 }
 .rovenheight-p
@@ -98,7 +97,7 @@ display: none;
   background-color: #FF7A00;
 }
 .left-side-middle{
-  margin-right: 70px;
+  margin-right: 50px;
   width: 0px;
   height: 350px;
   display: flex;
@@ -121,8 +120,8 @@ display: none;
   border-radius: 5px;
   background-color: white;
   margin-bottom: 24px;
-  /* border: 1px solid white; */
-  
+  width: 880px;
+  border: 1px solid #eeeeee;
 }
 /* ===Right side second child=== */
 .right-side-second-child{
@@ -132,25 +131,22 @@ display: none;
   border-radius: 5px;
   background-color: white;
   margin-bottom: 34px;
-  width: 600px;
+  width: 800px;
   border: 1px solid #eeeeee;
 }
 .right-side .date{
   color:#A7A7A7;
   font-size: 10px;
-  /* padding-bottom: 15px; */
 }
 .whole-content-right{
   display: flex;
   flex-direction: column;
-    border: 1px solid #eeeeee;
     border-radius: 5px;
     padding-right: 70px;
 }
 .whole-content-left{
   display: flex;
   flex-direction: column;
-  /* padding-right: 120px; */
 }
 .content-right{
   display: flex;
@@ -182,7 +178,7 @@ display: none;
   font-weight: 700;
   padding:14px 40px;
   border-radius: 4px;
-  margin-left: 130px;
+  margin-left: 210px;
   /* margin-right: 20px; */
 }
 .reassign-btn{
@@ -193,7 +189,12 @@ display: none;
   font-weight: 700;
   padding:14px 60px;
   border-radius: 4px;
-  margin-left: 250px;
+  margin-left: 340px;
+}
+.close-button{
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
 }
 @media screen and (max-width: 700px) {
   main {
@@ -233,7 +234,7 @@ display: none;
 }
 .reassign-btn{
   padding:10px 40px;
-  margin-left: 90px;
+  margin-left: 110px;
   
 }
 .body-container{
@@ -251,24 +252,27 @@ display: none;
   font-weight: 700;
   padding:10px 20px;
   border-radius: 4px;
-  margin-left: 170px;
+  margin-left: 190px;
   margin-bottom: 0px;
 /* justify-content: flex-start; */
 }
 .content-right{
   flex-direction: column;
 }
+.right-side-first-child{
+  width: 500px;
+}
 .right-side-second-child{
   margin-top: 15px;
   margin-left:20px;
   border-radius: 5px;
   margin-bottom: 34px;
-  width: 350px;
+  width: 470px;
 }
 .reassign-btn{
   padding:16px 60px;
   border-radius: 4px;
-  margin-left: 120px;
+  margin-left: 150px;
 }
 .document-reviewed-txt{
   padding-bottom: 4px;

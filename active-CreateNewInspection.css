@@ -129,4 +129,9 @@ select{
   #close-button {
     width: 40px;
   }
+  .close-button{
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+}
 }

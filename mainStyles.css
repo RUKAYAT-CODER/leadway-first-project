@@ -155,7 +155,11 @@ aside {
   color: #9fa8af;
   font-size: 14px;
 }
-
+.close-button{
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+}
 /* middle section body */
 .top-text {
   display: flex;
@@ -197,7 +201,6 @@ a {
 a:hover {
   cursor: pointer;
 }
-
 .link-expired {
   background-color: #fef3f2;
   color: #b42318;
@@ -287,6 +290,7 @@ a {
   border-radius: 16px;
   text-align: center;
   border: 1px solid rgb(220, 218, 218);
+  overflow-x: auto;
 }
 .bottom-table .completed {
   padding: 1px 14px;
@@ -401,7 +405,7 @@ a {
 }
 
 .percentage {
-  fill: #ff7f00;
+  fill: #fff;
   font-size: 0.4em;
   text-anchor: middle;
   color: white;
@@ -580,11 +584,8 @@ p {
   margin-top: 10px;
 }
 
-/* Responsiveness */
+
 /* Mobile screen */
-@media screen and (max-width: 600px) {
- 
-}
 
 /* Responsive Design */
 @media screen and (max-width: 800px) {
@@ -613,8 +614,7 @@ p {
   #close-button {
     width: 38px;
     z-index:199;
-    /* top:40px ; */
-    /* left: 30px; */
+
   }
     .search-box img {
   top: 18px;
@@ -636,8 +636,32 @@ button {
 .top-text a {
     align-self: flex-start;
   }
-.top-text{
-  /* flex-direction: column; */
+.bottom-table{
+  overflow-x: auto;
+}
+
+/* ===Survey report===== */
+.main-content-container-survey {
+  flex-direction: column;
+}
+.survey-image img{
+  margin-left: 230px;
+}
+.survey-image{
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.survey-v-line{
+  display: none;
+}
+.chart{
+  border: 1px solid #eeeeee;
+}
+.progress-text, .progress-days{
+  text-align: center;
+  margin: 8px 0;
 }
 }
 
@@ -652,5 +676,8 @@ button {
   .search-box img {
   top: 24px;
   left: 4px;
+}
+.bottom-table{
+  overflow-x: auto;
 }
 }

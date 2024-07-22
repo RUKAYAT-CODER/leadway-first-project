@@ -114,6 +114,11 @@ th {
   font: 11px;
   line-height: 18px;
 }
+.close-button{
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+}
 /* =======Responsiveness */
 @media only screen and (max-width: 600px) {
   main {

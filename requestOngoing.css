@@ -53,6 +53,11 @@ th {
 .bottom-table{
   overflow-x: auto;
 }
+.close-button{
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+}
 @media screen and (max-width: 700px) {
   .top-text{
   flex-direction: column;
