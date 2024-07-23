@@ -293,7 +293,7 @@ aside {
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  width: 380px;
+  /* width: 380px; */
   height: fit-content;
   margin: 5% auto;
   background-color: white;
@@ -466,8 +466,8 @@ aside {
     margin-top: 0;
   }
   #model2 {
-    width: 60%;
-    height: 150px;
+    /* width: 60%;
+    height: 150px; */
     /* margin: 25% auto;
     margin-left: -25px; */
   }
@@ -475,7 +475,8 @@ aside {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 350px;
+    /* width: 350px;git add .
+     */
     height: fit-content;
   }
   .model-close-button {
