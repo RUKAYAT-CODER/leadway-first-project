@@ -99,6 +99,7 @@ form {
   font-size: 1.6rem;
   color: #000;
   font-weight: 400;
+  background-color:transparent;
 }
 .form-group div input::placeholder {
   color: #afb0b1;

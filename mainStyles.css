@@ -338,6 +338,11 @@ a {
 .survey-description {
   display: flex;
 }
+.survey-image{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
 .small {
   font-size: 10px;
   color: #a3a3a3;
