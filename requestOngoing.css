@@ -50,6 +50,9 @@ th {
   font: 11px;
   line-height: 18px;
 }
+.table-container{
+  overflow-x: auto;
+}
 .bottom-table{
   overflow-x: auto;
 }

@@ -155,7 +155,7 @@ aside {
   color: #9fa8af;
   font-size: 14px;
 }
-.close-button{
+.close-button {
   font-size: 18px;
   font-weight: 700;
   cursor: pointer;
@@ -243,12 +243,9 @@ button {
   border-radius: 4px;
   border: 1px solid #eeeeee;
 }
-.search-box,
-.marine,
-select {
-  margin-left: 15px;
-}
+
 .status-search-container {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -256,21 +253,37 @@ select {
 }
 .search {
   display: flex;
+  gap: 1rem;
+  /* width: 100%; */
 }
-.search-box {
-  display: flex;
-  position: relative;
-}
+
 .marine {
   background-color: #eeeeee;
 }
-.search-box img {
+.search-box {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  border: 1px solid #eeeeee;
+  padding-inline: 1rem;
+}
+.search img {
+  width: 20px;
+  height: 20px;
+}
+/* .search-box img {
   position: absolute;
   width: 15px;
   height: 15px;
   top: 8px;
   left: 4px;
   vertical-align: center;
+} */
+.search input {
+  border: none;
+  background-color: transparent;
+  flex: 1;
 }
 .search-box input::placeholder {
   padding-left: 12px;
@@ -583,12 +596,19 @@ p {
   border: 1px solid #eeeeee;
   margin-top: 10px;
 }
-
+.button-select-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.table-container{
+  overflow-x: auto;
+}
 
 /* Mobile screen */
 
 /* Responsive Design */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 968px) {
   main {
     margin-left: 0;
     padding: 10px;
@@ -597,6 +617,12 @@ p {
   aside {
     display: none; /* Hide sidebar on smaller screens */
   }
+  .class,
+  .marine {
+    width: 100%;
+    height: 40px;
+  }
+
   .hamburger-menu {
     display: block;
     position: fixed;
@@ -613,56 +639,78 @@ p {
   }
   #close-button {
     width: 38px;
-    z-index:199;
-
+    z-index: 199;
   }
-    .search-box img {
-  top: 18px;
-}
- .status-button{
-    display: flex;
+  .search {
     flex-direction: column;
+    width: 100%;
+  }
+
+  /* .search-box img {
+    top: 18px;
+  } */
+  .status-button {
+    margin-bottom: 10px;
+    /* display: flex; */
+    /* flex-direction: column; */
   }
   .status-search-container input,
-select,
-button {
-  padding: 5px;
-}
-.top-text a {
-  font-size: 12px;
-  padding: 10px;
-  margin-top: 10px;
-}
-.top-text a {
+  select,
+  button {
+    padding: 5px;
+  }
+  .top-text a {
+    font-size: 12px;
+    padding: 10px;
+    margin-top: 10px;
+  }
+  .top-text a {
     align-self: flex-start;
   }
-.bottom-table{
-  overflow-x: auto;
-}
+  .table-container {
+    width: 100%;
+    overflow-x: auto;
+  }
+  .status-search-container {
+    flex-direction: column;
+  }
+  .bottom-table {
+    overflow-x: auto;
+  }
 
-/* ===Survey report===== */
-.main-content-container-survey {
-  flex-direction: column;
-}
-.survey-image img{
-  margin-left: 230px;
-}
-.survey-image{
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 20px;
-}
-.survey-v-line{
-  display: none;
-}
-.chart{
-  border: 1px solid #eeeeee;
-}
-.progress-text, .progress-days{
-  text-align: center;
-  margin: 8px 0;
-}
+  /* ===Survey report===== */
+  .main-content-container-survey {
+    flex-direction: column;
+  }
+  .complete-container-survey h3 {
+    margin: 20px 0;
+    margin-left: 50px;
+  }
+  .survey-image img {
+    margin-left: 100px;
+  }
+  .survey-image {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  .survey-v-line {
+    display: none;
+  }
+  .chart {
+    border: 1px solid #eeeeee;
+  }
+  .progress-text,
+  .progress-days {
+    text-align: center;
+    margin: 8px 0;
+  }
+  .tabs {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #eee;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -673,11 +721,14 @@ button {
   .create-request-btn {
     margin-top: 10px;
   }
-  .search-box img {
-  top: 24px;
-  left: 4px;
-}
-.bottom-table{
-  overflow-x: auto;
-}
+  /* .search-box img {
+    top: 24px;
+    left: 4px;
+  } */
+   .table-container{
+    overflow-x: auto;
+   }
+  .bottom-table {
+    overflow-x:auto;
+  }
 }

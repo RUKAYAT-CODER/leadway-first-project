@@ -69,29 +69,36 @@
       </div>
         
         <div class="status-search-container">
-          <div class="status-button">
-            <a href="request-dashboard.html" class="all-request">All Requests</a>
-            <a href="requestOngoing.html">Ongoing</a>
-            <a href="requestCompleted.html" class="completed-staus">Completed</a>
-          </div>
-
-          <div class="search">
-            <div class="search-box">
-              <img src="/images/search-icon.png" alt="">
-              <input type="text" placeholder="Search">
-            </div>
-
-            <button class="marine"><span class="entity-marine">&#8226;</span> marine X</button>
-
-            <select name="class" id="">
-              <option value="sort-by">sort by: Class</option>
-              <option value="sort-by">class</option>
-              <option value="sort-by">class</option>
-            </select>
-          </div>
+        <div class="status-button">
+          <a href="request-dashboard.html" class="all-request">All Requests</a>
+          <a href="requestOngoing.html">Ongoing</a>
+          <a href="requestCompleted.html" class="completed-status">Completed</a>
         </div>
 
-    <table class="bottom-table">
+        <div class="search">
+          <div class="search-box">
+            <img src="/images/search-icon.png" alt="" />
+            <input type="text" placeholder="Search" />
+          </div>
+
+         <div class="button-select-container">
+           <button class="marine">
+            <span class="entity-marine">&#8226;</span> marine X
+          </button>
+
+          <select name="class" class="class" id="">
+            <option value="sort-by">
+              <span class="sortby">sort by: </span>Class
+            </option>
+            <option value="sort-by">class</option>
+            <option value="sort-by">class</option>
+          </select>
+         </div>
+        </div>
+      </div>
+
+    <div class="table-container">
+      <table class="bottom-table">
     <thead>
     <tr>
       <th>ID</th>
@@ -123,6 +130,7 @@
     </tr>
     </tbody>
     </table>
+    </div>
 <script src="hamburger.js"></script>
   </main>
 </html>

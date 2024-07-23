@@ -7,7 +7,7 @@
   border-radius: 3px;
   color: #2f2f2f;
 }
-.completed-staus{
+.completed-status{
   background-color: white;
   border-radius: 3px;
   color: #2f2f2f;
@@ -152,10 +152,10 @@ th {
   #close-button {
     width: 40px;
   }
-  .status-button{
+  /* .status-button{
     display: flex;
     flex-direction: column;
-  }
+  } */
   .search-box img {
   position: absolute;
   width: 15px;

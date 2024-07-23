@@ -176,7 +176,7 @@
       </form>
 
     </div>
-    <div class="overlay-popup" id="overlay-popup"></div>
+    <div class="overlay-popup hidden" id="overlay-popup"></div>
 
     <!-- ===pop up one=== -->
     <div class="popuponebg">
@@ -196,7 +196,7 @@
  <div class="main-pop-up-two-container hidden" id="model2">
       <div class="pop-up-two-container">
         <div class="close-container">
-          <img src="./icons/clarity_close-line.svg" alt="icon-close" class="close-button"/>
+          <img src="./icons/clarity_close-line.svg" alt="icon-close" class="model-close-button" id=""/>
         </div>
         <img src="/icons/popp-up-one-image.svg" alt="icon" />
 
@@ -221,6 +221,8 @@
   <script>
     function showModel(model){
       document.getElementById(model).classList.remove('hidden')
+      document.getElementById("overlay-popup").classList.remove('hidden')
+
       document.getElementsByTagName('body').style.backgroundColor ='rgba(0, 0, 0, 0.5)'
       // if(){
 
@@ -244,7 +246,7 @@
     }
   }
   </script>
-  <script src="script.js"></script>
+  <script src="hamburger.js"></script>
 
 </body>
 
