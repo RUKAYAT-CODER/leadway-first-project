@@ -12,23 +12,24 @@
   border-radius: 3px;
   color: #2f2f2f;
 }
-.status-search-container input,
+/* .status-search-container input,
 select,
 button {
   padding: 8px;
   border-radius: 4px;
   border: 1px solid #eeeeee;
-}
-.search-box,
+} */
+/* .search-box,
 .marine,
 select {
   margin-left: 15px;
-}
+} */
 .status-search-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100%;
+  margin-bottom: 15px;
 }
 .search {
   display: flex;
@@ -39,6 +40,8 @@ select {
 }
 .marine {
   background-color: #eeeeee;
+    margin-right: 10px;
+
 }
 .entity-marine {
   color: #6941c6;
@@ -156,14 +159,14 @@ th {
     display: flex;
     flex-direction: column;
   } */
-  .search-box img {
+  /* .search-box img {
   position: absolute;
   width: 15px;
   height: 15px;
   top: 15px;
   left: 4px;
   vertical-align: center;
-}
+} */
 .top-text{
   flex-direction: column;
 }

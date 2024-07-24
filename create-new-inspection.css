@@ -120,6 +120,10 @@ p {
     top: 100px;
     left: 50px;
   }
+  .arrowDiv img {
+    position: absolute;
+    top: -40px;
+}
   .create-request-btn {
     background-color: #c3c4c6;
     padding: 10px 30px;
@@ -143,6 +147,10 @@ p {
 }
 }
 
-@media screen and (max-width:1441px){
-  
+@media screen and (max-width:1445px){
+  .arrowDiv {
+  position: absolute;
+  top: 130px;
+  left: 50px;
+}
 }

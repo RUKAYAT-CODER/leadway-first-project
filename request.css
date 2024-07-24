@@ -38,6 +38,7 @@ select {
 }
 .marine {
   background-color: #eeeeee;
+   margin-right: 10px;
 }
 .entity-marine {
   color: #6941c6;

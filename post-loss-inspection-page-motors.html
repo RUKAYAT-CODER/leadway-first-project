@@ -175,7 +175,7 @@
 
     <!-- ===pop up one=== -->
     <div class="popuponebg">
-   <div class="pop-up-one hidden" id="model1">
+   <div class="pop-up-one-container hidden" id="model1">
     <h3>SEND TO TRM</h3>
     <p>Are you sure you want to send this request?</p>
     <div class="button-group-two">
@@ -189,7 +189,7 @@
  
 
  <div class="main-pop-up container hidden" id="model2">
-      <div class="pop-up-one-container">
+      <div class="pop-up-two-container">
         <div class="close-container">
           <img src="./icons/clarity_close-line.svg" alt="icon-close" class="model-close-button"/>
         </div>
@@ -216,11 +216,9 @@
   <script>
     function showModel(model){
       document.getElementById(model).classList.remove('hidden')
-      document.getElementsByTagName('body').style.backgroundColor ='rgba(0, 0, 0, 0.5)'
-      // if(){
-
-      // }
+      document.getElementById("overlay-popup").classList.remove('hidden');
     }
+
     function hide(model){
       document.getElementById(model).classList.add('hidden')
        document.getElementById("overlay-popup").classList.remove('hidden')
