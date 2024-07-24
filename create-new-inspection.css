@@ -75,19 +75,9 @@ p {
   font-size: 14px;
 }
 .create-request-buttton {
-  /* margin: auto; */
   width: 100%;
   cursor: pointer;
 }
-/* .create-request-btn {
-  background-color: #c3c4c6;
-  padding: 20px 60px;
-  margin: 100px 140px;
-  border-radius: 3px;
-  color: white;
-  text-align: center;
-  text-decoration: none;
-} */
 .create-request-btn {
   background-color: #c3c4c6;
   padding: 16px 28px;
@@ -121,9 +111,7 @@ p {
 }
 
 @media (max-width: 768px) {
-  /* .custom-select-wrapper {
-    width: 100%;
-  } */
+ 
   select {
     width: 100%;
   }
@@ -153,4 +141,8 @@ p {
   font-weight: 700;
   cursor: pointer;
 }
+}
+
+@media screen and (max-width:1441px){
+  
 }

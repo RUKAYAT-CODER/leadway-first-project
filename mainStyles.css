@@ -737,3 +737,24 @@ p {
     overflow-x:auto;
   }
 }
+
+/* Extra Large Screen  */
+@media screen and (min-width:1441px){
+  .bottom-table {
+    font-size: 22px;
+    padding: 20px;
+  }
+  .top-text-header h2 {
+  font-size: 34px;
+}
+header span {
+  font-size: 16px;
+}
+.top-text-header-large p {
+  font-size: 16px;
+}
+.top-text-header-large h2 {
+  font-size: 34px;
+}
+
+}

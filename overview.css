@@ -105,7 +105,6 @@
   padding: 13px;
   border-radius: 3px;
   background-color: #e30000;
-
 }
 
 .left-card-blue,
@@ -154,14 +153,6 @@ td {
   color: #c3c4c6;
   padding: 10px 0;
 }
-.grid-table {
-  height: 338px;
-  border: 1px solid grey;
-  border-collapse: separate;
-  border-radius: 6px;
-  margin-left: 10px;
-  font-size: 16px;
-}
 .right-card-header,
 .right-card-p {
   display: flex;
@@ -174,7 +165,6 @@ td {
 .right-card-header p {
   font-weight: 400;
   color: #2f2f2f;
-  /* line-height:16.2; */
   font-size: 12px;
   border-bottom: #d8d8d8;
 }
@@ -186,7 +176,6 @@ td {
 .right-card-header-span {
   font-size: 10px;
   color: #ff7a00;
-  /* line-height:12.55; */
   font-weight: 400;
 }
 .right-card-header {
@@ -276,7 +265,7 @@ a {
   font: 11px;
   line-height: 18px;
 }
-.close-button{
+.close-button {
   font-size: 18px;
   font-weight: 700;
   cursor: pointer;
@@ -285,7 +274,7 @@ a {
 /* Responsiveness */
 /* Mobile screen */
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 767px) {
   .middle-content-grid {
     grid-template-columns: 1fr;
   }
@@ -309,5 +298,79 @@ a {
   .show {
     display: none;
   }
-  
+}
+
+/*==== Tablet view===== */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .middle-content-grid {
+    grid-template-columns: 1fr;
+  }
+  .left-card {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 1441px) {
+  .middle-content-grid {
+    margin-bottom: 35px;
+    gap: 20px;
+  }
+  .left-card {
+    gap: 30px;
+  }
+  .right-card {
+    display: grid;
+    margin-left: 15px;
+    padding: 10px 10px 0 10px;
+  }
+  .right-card-header p {
+    font-size: 20px;
+  }
+  .right-card-header h2 {
+    font-weight: 600;
+    font-size: 26px;
+  }
+  .right-card-header-span {
+    font-size: 17px;
+    padding-right: 10px;
+  }
+  .right-card-p p {
+    font-size: 20px;
+  }
+  .ongoing {
+    font: 14px;
+  }
+  .inspection-link,
+  .link-expired,
+  .inspection-link {
+    font-size: 14px;
+  }
+  .bottom-table .completed {
+    font: 14px;
+  }
+  .bottom-table {
+    font-size: 22px;
+    padding: 20px;
+  }
+  .left-card{
+  grid-template-rows: 20rem 20rem;
+  }
+  .left-card-blue-child,
+.left-card-green-child,
+.left-card-yellow-child,
+.left-card-red-child {
+  margin-top: 210px;
+}
+.left-card-blue .all-request,
+.left-card-green .all-request,
+.left-card-yellow .all-request,
+.left-card-red .all-request {
+  font-size: 20px;
+}
+.left-card-blue-child .thirty-two,
+.left-card-green-child .thirty-two,
+.left-card-yellow-child .thirty-two,
+.left-card-red-child .thirty-two {
+  font-size: 38px;
+}
+
 }
