@@ -477,7 +477,7 @@ aside {
 }
 
 /* Extra Large Screen */
-@media screen and (max-width:1445px){
+@media screen and (min-width:1445px){
    .top-text-header h2 {
   font-size: 34px;
 }

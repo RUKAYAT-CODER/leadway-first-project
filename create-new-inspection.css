@@ -147,10 +147,50 @@ p {
 }
 }
 
-@media screen and (max-width:1445px){
+@media screen and (min-width:1445px){
   .arrowDiv {
   position: absolute;
   top: 130px;
   left: 50px;
+}
+.cardList {
+  width: 400px;
+  padding: 7% 1%;
+}
+.arrowDiv {
+    position: absolute;
+    top: 270px;
+    left: 130px;
+}
+.newInspectDiv {
+  gap: 50px;
+}
+.roundedImgDiv {
+  width: 130px;
+  height: 130px;
+}
+.custom-select-wrapper {
+  max-width: 870px;
+  margin: 2% auto;
+}
+.custom-select-wrapper select {
+    height: 46px;
+    width: 100%;
+    border-radius: 5px;
+    margin: 20px 0px;
+}
+p {
+  font-size: 20px;
+}
+.create-request-btn {
+  background-color: #c3c4c6;
+  padding: 20px 34px;
+  border-radius: 3px;
+  color: white;
+  text-align: center;
+  margin-left: 310px;
+  text-decoration: none;
+  margin-top: 10px;
+  cursor:pointer ;
 }
 }
