@@ -122,7 +122,7 @@ p {
   }
   .arrowDiv img {
     position: absolute;
-    top: -40px;
+    top: -8px;
 }
   .create-request-btn {
     background-color: #c3c4c6;
@@ -159,8 +159,8 @@ p {
 }
 .arrowDiv {
     position: absolute;
-    top: 270px;
-    left: 130px;
+    top: 190px;
+    left: 120px;
 }
 .newInspectDiv {
   gap: 50px;

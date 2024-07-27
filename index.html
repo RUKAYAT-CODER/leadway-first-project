@@ -88,9 +88,25 @@
     </div>
   </div>
   <script>
-document.getElementById('login').addEventListener('click', ()=>{
-  window.location.href ='/overview-dashboard.html'
-})
+    const loginForm = document.getElementById('login-form')
+    loginForm.addEventListener('click', (e)=>{
+      e.preventDefault()
+
+const loginId =document.getElementById('loginId'). value.trim();
+const password = document.getElementById('password'). value.trim();
+const button = document.getElementById('button')
+if(loginId === 'admin' && password === 'admin'){
+window.location.href ='/overview-dashboard.html'
+// document.getElementById('login').addEventListener('click', ()=>{
+  
+// })
+}
+else{
+  return;
+}
+
+    })
+  
   </script>
 
 </body>

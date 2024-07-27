@@ -298,6 +298,9 @@ a {
   .show {
     display: none;
   }
+  .right-card {
+margin-top: 10px;
+}
 }
 
 /*==== Tablet view===== */

@@ -23,6 +23,7 @@ header {
   align-items: center;
   justify-content: flex-end;
   border-bottom: 1px solid rgba(242, 240, 240, 0.8);
+  
 }
 
 /*====== Main Section===== */
@@ -272,14 +273,6 @@ button {
   width: 20px;
   height: 20px;
 }
-/* .search-box img {
-  position: absolute;
-  width: 15px;
-  height: 15px;
-  top: 8px;
-  left: 4px;
-  vertical-align: center;
-} */
 .search input {
   border: none;
   background-color: transparent;
@@ -304,6 +297,7 @@ a {
   text-align: center;
   border: 1px solid rgb(220, 218, 218);
   overflow-x: auto;
+
 }
 .bottom-table .completed {
   padding: 1px 14px;
