@@ -331,6 +331,7 @@ a {
 }
 .survey-description {
   display: flex;
+  flex-wrap: wrap;
 }
 .survey-image{
   display: flex;
@@ -648,13 +649,8 @@ p {
     width: 100%;
   }
 
-  /* .search-box img {
-    top: 18px;
-  } */
   .status-button {
     margin-bottom: 10px;
-    /* display: flex; */
-    /* flex-direction: column; */
   }
   .status-search-container input,
   select,
@@ -684,6 +680,11 @@ p {
   .main-content-container-survey {
     flex-direction: column;
   }
+  .survey-description {
+  /* flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+}
   .complete-container-survey h3 {
     margin: 20px 0;
     margin-left: 50px;
@@ -723,10 +724,7 @@ p {
   .create-request-btn {
     margin-top: 10px;
   }
-  /* .search-box img {
-    top: 24px;
-    left: 4px;
-  } */
+  
    .table-container{
     overflow-x: auto;
    }
